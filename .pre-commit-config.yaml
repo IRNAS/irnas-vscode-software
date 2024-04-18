@@ -59,6 +59,7 @@ repos:
     rev: v0.10.0.1
     hooks:
       - id: shellcheck
+        args: [--exclude=SC2086]
         stages: [pre-commit]
   - repo: https://github.com/lovesegfault/beautysh
     rev: v6.2.1
@@ -81,4 +82,5 @@ repos:
         args: [--fix]
         stages: [pre-commit]
 
+exclude: irnas.code-profile
 default_install_hook_types: [pre-commit, commit-msg]

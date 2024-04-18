@@ -1,0 +1,72 @@
+{
+  "hfile": {
+    "prefix": [
+      "hfile"
+    ],
+    "body": [
+      "/** @file $TM_FILENAME_BASE.h",
+      " *",
+      " * @brief ${2:A description of the module's purpose.}",
+      " *",
+      " * @par",
+      " * COPYRIGHT NOTICE: (c) $CURRENT_YEAR Irnas. All rights reserved.",
+      " */",
+      "",
+      "#ifndef ${TM_FILENAME_BASE/(.*)/${1:/upcase}/}_H",
+      "#define ${TM_FILENAME_BASE/(.*)/${1:/upcase}/}_H",
+      "",
+      "#ifdef __cplusplus",
+      "extern \"C\" {",
+      "#endif",
+      "",
+      "${0}",
+      "",
+      "#ifdef __cplusplus",
+      "}",
+      "#endif",
+      "",
+      "#endif /* ${TM_FILENAME_BASE/(.*)/${1:/upcase}/}_H */",
+      "",
+    ],
+    "description": "IRNAS .h file template"
+  },
+  "cfile": {
+    "prefix": [
+      "cfile"
+    ],
+    "body": [
+      "/** @file $TM_FILENAME_BASE.c",
+      " * ",
+      " * @par       ",
+      " * COPYRIGHT NOTICE: (c) $CURRENT_YEAR Irnas. All rights reserved.",
+      " */",
+      "",
+      "",
+      "#include \"$TM_FILENAME_BASE.h\"",
+      "",
+      "${0}",
+      "",
+    ],
+    "description": "IRNAS .c file template"
+  },
+  "slc": {
+    "prefix": [
+      "slc"
+    ],
+    "body": [
+      "/* ${0} */"
+    ],
+    "description": "C89-style single line comment"
+  },
+  "mlc": {
+    "prefix": [
+      "mlc"
+    ],
+    "body": [
+      "/*",
+      " * ${0}",
+      " */"
+    ],
+    "description": "C89-style multi line comment"
+  }
+}
