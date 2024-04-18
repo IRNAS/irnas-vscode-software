@@ -1,0 +1,76 @@
+{
+  // General settings
+  "editor.formatOnSave": true,
+  "files.associations": {
+    "CMakeLists.txt": "cmake",
+    "*.h": "c",
+    "*.hpp": "c",
+    "*.cpp": "c",
+    "*defconfig": "kconfig",
+    "*.conf": "kconfig"
+  },
+  "files.trimTrailingWhitespace": true,
+  "files.trimFinalNewlines": true,
+  "files.insertFinalNewline": true,
+  "[c][cpp]": {
+    "editor.detectIndentation": false,
+    "editor.tabSize": 8,
+    "editor.insertSpaces": false,
+    "editor.defaultFormatter": "xaver.clang-format"
+  },
+  // Don't change focus, when debugging.
+  "debug.focusWindowOnBreak": false,
+  "debug.focusEditorOnBreak": false,
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.autoClosingComments": "always",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.openRepositoryInParentFolders": "never",
+  "security.workspace.trust.enabled": false,
+  // Does not ask with popup when you want to delete files
+  "explorer.confirmDelete": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "telemetry.telemetryLevel": "none",
+  // Extensions
+  "clang-format.executable": "/usr/bin/clang-format-18",
+  "errorLens.enabledDiagnosticLevels": [
+    "error",
+    "warning",
+    "info",
+    "hint"
+  ],
+  "auto-comment-blocks.singleLineBlockOnEnter": true,
+  "errorLens.messageEnabled": false,
+  "errorLens.gutterIconsEnabled": true,
+  "doxdocgen.generic.paramTemplate": "@param[in] {param} ",
+  "doxdocgen.generic.returnTemplate": "@return ",
+  "clangd.arguments": [
+    "--enable-config",
+    "--query-driver=/usr/bin/**/clang-*,/bin/clang,/bin/clang++,/usr/bin/gcc,/usr/bin/g++,${env:HOME}/gnuarmemb/bin/arm-none-eabi-gcc",
+    "--all-scopes-completion",
+    "--background-index",
+    "-j=8",
+    "--clang-tidy",
+    "--completion-style=detailed",
+    "--function-arg-placeholders",
+    "--header-insertion-decorators",
+    "--header-insertion=never",
+    "--pch-storage=memory"
+  ],
+  "cortex-debug.enableTelemetry": false,
+  "cortex-debug.liveWatchRefreshRate": 250,
+  "C_Cpp.intelliSenseEngine": "disabled",
+  "workbench.colorTheme": "Default Dark Modern",
+  "github.copilot.enable": {
+    // Enable for everything, except plain text and git input boxes.
+    "*": true,
+    "plaintext": false,
+    "scminput": false
+  },
+}
