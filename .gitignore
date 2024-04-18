@@ -43,3 +43,10 @@ share/python-wheels/
 
 #envrc
 .envrc
+
+# Everything inside Code directory except certain files in the User directory
+dotfiles/.config/Code/*
+!dotfiles/.config/Code/User
+dotfiles/.config/Code/User/*
+!dotfiles/.config/Code/User/snippets
+!dotfiles/.config/Code/User/settings.json
