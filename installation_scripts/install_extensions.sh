@@ -48,7 +48,7 @@ install marus25.cortex-debug
 install ms-vscode.vscode-embedded-tools
 install keroc.hex-fmt
 install nordic-semiconductor.nrf-kconfig
-install nordic-semiconductor.nrf-kconfig
+install nordic-semiconductor.nrf-devicetree
 install nordic-semiconductor.nrf-terminal
 
 # Extras
